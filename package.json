@@ -1,0 +1,36 @@
+{
+  "name": "dahsboard-system-monitoring",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-scripts": "1.1.5"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.0.0-rc.15",
+    "lint-staged": "^7.3.0",
+    "prettier": "^1.14.3",
+    "prettier-eslint": "^8.8.2",
+    "prettier-eslint-cli": "^4.7.1"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css,md}": [
+      "prettier-eslint --write",
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
